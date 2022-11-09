@@ -1,0 +1,144 @@
+.project-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+    }
+    
+    .name-box {
+    border: 1px solid #EEEEEE;
+    border-top: 0;
+    padding-bottom: 20px;
+    }
+    
+    .project-link {
+    display: block;
+    transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .project-link:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    
+    }
+    
+    .project-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .name-project {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--bs-dark);
+    margin: 20px 0px 4px 24px;
+    }
+    
+    .profession-project {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    color: var(--bs-approx-grey);
+    margin: 4px 0px 0px 24px;
+    }
+    
+    
+    
+    .overlay-img {
+    position: relative;
+    overflow: hidden;
+    
+    }
+    
+    .overlay-project {
+        background: rgba(33, 150, 243, 0.9);
+        padding: 63px 24px; 
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        transform: translateY(100%);
+        height: 100%;
+        width: 100%;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+    
+    }
+    
+    .project-link:hover .overlay-project,
+    .project-link:focus .overlay-project {
+        transform: translateY(0);
+        
+    }
+    
+    .overlay-desc {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        /* or 156% */
+        
+        letter-spacing: 0.03em;
+        
+        color: #FFFFFF;
+    }
+    
+    .social-address {
+        display: flex;
+        justify-content: center;
+        margin: -130px 0px 0px -372px;
+        color: #FFFFFF;
+    }
+    
+    .groups {
+    display: flex;
+    margin: 38px 0px 0px -120px;
+    }
+    
+    
+    .group-tittle {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+    
+    .footer-insta,
+    .footer-twit,
+    .footer-fac {
+    margin-right: 10px;
+    }
+    
+    
+    .icons{
+       fill: currentColor;
+    }
+    
+    
+    .link-svg__icons {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        color: #FFFFFF;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+          &:focus {
+            background-color: #2196F3;
+            color: #FFFFFF; 
+            transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+    }
+        
+        }
+  

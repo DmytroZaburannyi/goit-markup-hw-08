@@ -1,0 +1,62 @@
+.team {
+    height: 708px;
+    background: var(--bs-ghost-white);
+    padding-bottom: 95px;
+    }
+    
+    .team-title {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.2;
+        text-align: center;
+        /* letter-spacing: 0.03em; */
+        color: var(--bs-dark);
+        left: 668px;
+        padding-bottom: 50px;
+        padding-top: 94px;
+    
+    }
+    .team-row {
+    display: flex;
+    }
+    
+    .team-card {
+    width: 270px;
+    margin-right: 30px;
+    background: var(--bs-white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    }
+    
+    
+    
+    
+    .social-group {
+    display: flex;
+    justify-content: space-evenly;
+    fill: #afb1b8;
+    padding: 10px 32px;
+    }
+    
+    .name {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--bs-dark);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    }
+    
+    .profession {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--bs-approx-grey);
+    margin-bottom: 16px;
+    }

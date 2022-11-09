@@ -1,0 +1,120 @@
+.button-send {
+    width: 200px;
+    height: 50px;
+    
+    border: #2196F3;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-left: 12px;
+    transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--bs-white);
+        background: #188CE8;
+    }
+    }
+    
+
+        
+    
+    .send {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 188% */
+    
+    display: flex;
+    align-items: center;
+    margin-left: 28px;
+    letter-spacing: 0.06em;
+    
+    color: var(--bs-white);
+    }
+    
+    .icon-send {
+        margin-left: 10px;
+    }
+    
+    
+    
+    .portfolio {
+    padding-bottom: 94px;
+    }
+    
+    .btn-section {
+    padding-top: 94px;
+    }
+    
+    .btn-1 {
+        width: 73px;
+        height: 38px;
+        
+    }
+    
+    .btn-2 {
+        width: 125px;
+        height: 38px;
+        
+    }
+    
+    .btn-3 {
+        width: 112px;
+        height: 38px;
+        
+    }
+    
+    .btn-4{
+        width: 103px;
+        height: 38px;
+        
+    }
+    
+    .btn-5 {
+        width: 130px;
+        height: 38px;
+        
+    }
+    
+    .hidden {
+    display: none;
+    }
+    
+    
+    .btn-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    }
+    
+    
+    .btn__row {
+    border: var(--bs-ghost-white);
+    background: var(--bs-ghost-white);
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--bs-dark);
+    cursor: pointer;
+    transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--bs-white);
+        background: var(--bs-blue);
+        filter: drop-shadow(0px 4px 4px  rgba(0, 0, 0, 0.25));
+    }
+    }
+    
+    .btn-active {
+    margin-right: 8px;
+    
+    }
