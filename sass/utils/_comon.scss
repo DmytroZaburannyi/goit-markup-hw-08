@@ -6,9 +6,29 @@ body {
     
 
     .container {
-    max-width: 1200px;
+    // max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
     width: 100%;
+
+    @media screen and (min-width: $mob) {
+        width: $mob;
+        
     }
+
+    @media screen and (min-width:$tabl) {
+    width: $tabl;
+    
+    }
+
+    @media screen and (min-width:$desc) {
+    width: $desc;
+    
+    }
+
+
+ 
+
+    }
+

@@ -97,6 +97,8 @@ header {
     width: 100%;
     }
     
+
+    
     
     
     
@@ -111,8 +113,24 @@ header {
     }
     
     .contacts {
-    display:flex; 
+    
     margin-left: auto;
+
+    @media screen and (min-width:$mob) and (max-width:$pre-tabl) {
+        display:flex; 
+
+    }
+
+
+    @media screen and (min-width:$desc) {
+        display:flex; 
+    }
+
+    @media screen and (min-width:$tabl) and (max-width:$pre-desc) {
+
+        padding-top: 21px;
+    }
+
     } 
     
     
@@ -135,6 +153,14 @@ header {
     &:focus {
         color: var(--bs-blue);
     }
+
+    @media screen and (min-width:$tabl) and (max-width:$pre-desc) {
+        font-size: 12px;
+        line-height: 14px;
+        padding-bottom: 7px;
+        padding-top: 0;
+
+    }
     
     }
     
@@ -150,3 +176,182 @@ header {
     margin-bottom: auto;
     margin-top: auto;
     }
+
+    .header-nav,
+    .contacts {
+        @media screen and  (max-width:$pre-tabl) {
+
+            display: none;
+            
+        }
+    }
+
+    .burger {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        background-color: transparent;
+
+        @media screen and  (min-width:$tabl) {
+
+            display: none;
+            
+        }
+
+        &__line {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: var(--bs-blue);
+            
+            &::after,
+            &::before {
+            position: absolute;
+            content: '';
+            background-color: var(--bs-blue);
+            width: 100%;
+            height: 3px;
+            left: 0;
+        }
+
+        &::after {
+            top: -15px;
+            
+        }
+
+        &::before {
+            bottom: -15px;
+            
+        }
+
+    }
+    }
+
+    .mob-menu {
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        transform: translate(100%);
+        background-color: #FFF;
+        transition: transform 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+
+        &.is-open {
+            transform: translate(0);
+        }
+    }
+    
+    .mob-menu__body {
+        position: relative;
+        max-width: 480px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 10px;
+        
+    }
+
+    .mob-menu__close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        &:hover,
+        &:focus {
+        color: var(--bs-blue);
+    }
+
+    }
+
+    .contacts-link {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 40px;
+        /* identical to box height */
+        
+        letter-spacing: 0.02em;
+        
+        color: #2196F3;
+    }
+
+    .mob-contacts {
+        margin-bottom: 64px;
+    }
+
+    .mob-contacts__item {
+        display: flex;
+        margin-bottom: 32px;
+        margin-left: 40px;
+    }
+
+    .contacts-mail {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        
+        color: #757575;
+    }
+
+    .mob-link {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 47px;
+        letter-spacing: 0.02em;
+        
+        color: #212121;
+    }
+
+    .mob-menu__link {
+        margin-bottom: 32px;
+        margin-left: 40px;
+    }
+
+    .mob-menu__list {
+        margin-top: 48px;
+        margin-bottom: 306px;
+    }
+
+    .link-mob {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height, or 122% */
+        
+        letter-spacing: 0.02em;
+        
+        color: #2196F3;
+    }
+
+    .social-mob__link:not(:last-child) {
+        
+        border-right: 1px solid rgba(33,33,33,.2);
+        padding-right: 10px;
+        
+    
+}
+
+.social-mob {
+    display: flex;
+    gap: 10px;
+    margin-left: 40px;
+}
+
+    
+

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HW-7</title>
+    <title>HW-8</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,10 +15,11 @@
   </head>
   <body>
     <header>
-      <div class="header-inner container">
+      <div class="header-inner container ">
         <nav class="header-nav">
           <a class="logo" href="index.html"
             ><span class="web">Web</span><span class="studio">Studio</span></a>
+           
 
           <ul class="header-nav__list">
             <li class="header-nav__link">
@@ -50,6 +51,80 @@
             </a>
           </li>
         </ul>
+
+        <button class="burger js-open-menu">
+          <span class="burger__line"></span>
+        </button>
+      </div>
+
+      <div class="mob-menu js-menu-container">
+        <button class="mob-menu__close js-close-menu">
+          <svg
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+
+        <div class="mob-menu__body">
+          <ul class="mob-menu__list">
+            <li class="mob-menu__link">
+              <a href="index.html" class="mob-link active">Студія</a>
+            </li>
+            <li class="mob-menu__link">
+              <a href="portfolio.html" class="mob-link">Портфоліо</a>
+            </li>
+            <li class="mob-menu__link">
+              <a href=".html" class="mob-link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+          <ul class="mob-contacts">
+          <li class="mob-contacts__item">
+            <a href="tell:+380961111111" class="contacts-link">
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li class="mob-contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts-mail">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+
+          <ul class="social-mob">
+            <li class="social-mob__link">
+              <a class="link-mob" href="https://www.instagram.com">
+                Instagram
+              </a>
+            </li>
+            <li class="social-mob__link">
+              <a class="link-mob" href="https://twitter.com">
+                Twitter
+              </a>
+            </li>
+            <li class="social-mob__link">
+              <a class="link-mob" href="https://facebook.com">
+                Facebook
+              </a>
+            </li>
+            <li class="social-mob__link">
+              <a class="link-mob" href="https://www.linkedin.com">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+         </div>
+        </div>
       </div>
     </header>
 
@@ -141,7 +216,7 @@
           <div class="row-img">
             <h2 class="peculiarities-title">особливості</h2>
             <ul class="feature__list">
-              <li class="item-antenna">
+              <li class="item-icon">
                 <div class="peculiarities__icon">
                   <svg class="medium__icon" width="70" height="70">
                     <use href="./images/icons.svg#icon-antenna-1"></use>
@@ -153,7 +228,7 @@
                   формування позиції.
                 </p>
               </li>
-              <li class="item-clock">
+              <li class="item-icon">
                 <div class="peculiarities__icon">
                   <svg class="medium__icon" width="70" height="70">
                     <use href="./images/icons.svg#icon-clock-1"></use>
@@ -165,7 +240,7 @@
                   тягне у себе.
                 </p>
               </li>
-              <li class="item-diagram">
+              <li class="item-icon">
                 <div class="peculiarities__icon">
                   <svg class="medium__icon" width="70" height="70">
                     <use href="./images/icons.svg#icon-diagram-1"></use>
@@ -177,7 +252,7 @@
                   зумовлює.
                 </p>
               </li>
-              <li class="item-astronaut">
+              <li class="item-icon">
                 <div class="peculiarities__icon">
                   <svg class="medium__icon" width="70" height="70">
                     <use href="./images/icons.svg#icon-astronaut-1"></use>
@@ -242,13 +317,33 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-row">
             <li class="team-card">
-              <img
-                class="img-card"
-                src="images/team-card1.jpg"
-                width="270"
-                height="260"
-                alt="Ігор"
-              />
+              <picture>
+                <source srcset="
+                ./images/img-480.webp 1x, 
+                ./images/img-480@2x.webp 2x"
+                type="image/webp"
+                media="(max-width:768px)"
+                >
+
+                <source srcset="
+                ./images/img1-1200.webp 1x, 
+                ./images/img1-1200@2x.webp 2x"
+                type="image/webp"
+                media="(min-width:1200px)"
+                >
+
+                <source srcset="
+                ./images/img1-768.webp 1x, 
+                ./images/img1-768@2x.webp 2x"
+                type="image/webp"
+                media="(min-width:768px)"
+                >
+
+                
+
+                <img src="./images/img1-1200.jpg 1x, ./images/img1-1200@2x.jpg 2x" alt="">
+              </picture>
+
               <h3 class="name">Ігор Дем'яненко</h3>
               <p class="profession">Product Designer</p>
               <div class="social">
@@ -287,13 +382,35 @@
               </div>
             </li>
             <li class="team-card">
-              <img
-                class="img-card"
-                src="images/team-card2.jpg"
-                width="270"
-                height="260"
-                alt="Ольга"
-              />
+              <picture>
+                <source srcset="
+                ./images/img2-480.webp 1x, 
+                ./images/img2-480@2x.webp 2x"
+                type="image/webp"
+                media="(max-width:768px)"
+                >
+
+                <source srcset="
+                ./images/img2-1200.webp 1x, 
+                ./images/img2-1200@2x.webp 2x"
+                type="image/webp"
+                media="(min-width:1200px)"
+                >
+
+                <source srcset="
+                ./images/img2-768.webp 1x, 
+                ./images/img2-768@2x.webp 2x"
+                type="image/webp"
+                media="(min-width:768px)"
+                >
+
+                
+
+                <img src="./images/img2-1200.jpg 1x, ./images/img2-1200@2x.jpg 2x" alt="">
+              </picture>
+
+
+              
               <h3 class="name">Ольга Рєпіна</h3>
               <p class="profession">Frontend Developer</p>
               <div class="social">
@@ -332,13 +449,35 @@
               </div>
             </li>
             <li class="team-card">
-              <img
-                class="img-card"
-                src="images/team-card3.jpg"
-                width="270"
-                height="260"
-                alt="Микола"
-              />
+              <picture>
+              <source srcset="
+                ./images/img3-480.webp 1x, 
+                ./images/img3-480@2x.webp 2x"
+                type="image/webp"
+                media="(max-width:768px)"
+                >
+
+                <source srcset="
+                ./images/img3-1200.webp 1x, 
+                ./images/img3-1200@2x.webp 2x"
+                type="image/webp"
+                media="(min-width:1200px)"
+                >
+
+                <source srcset="
+                ./images/img3-768.webp 1x, 
+                ./images/img3-768@2x.webp 2x"
+                type="image/webp"
+                media="(min-width:768px)"
+                >
+
+                
+
+                <img src="./images/img3-1200.jpg 1x, ./images/img3-1200@2x.jpg 2x" alt="">
+              </picture>
+
+
+             
               <h3 class="name">Микола Тарасов</h3>
               <p class="profession">Marketing</p>
               <div class="social">
@@ -377,13 +516,35 @@
               </div>
             </li>
             <li class="team-card">
-              <img
-                class="img-card"
-                src="images/team-card4.jpg"
-                width="270"
-                height="260"
-                alt="Михайло"
-              />
+            <picture>
+              <source srcset="
+                ./images/img4-480.webp 1x, 
+                ./images/img4-480@2x.webp 2x"
+                type="image/webp"
+                media="(max-width:768px)"
+                >
+
+                <source srcset="
+                ./images/img4-1200.webp 1x, 
+                ./images/img4-1200@2x.webp 2x"
+                type="image/webp"
+                media="(min-width:1200px)"
+                >
+
+                <source srcset="
+                ./images/img4-768.webp 1x, 
+                ./images/img4-768@2x.webp 2x"
+                type="image/webp"
+                media="(min-width:768px)"
+                >
+
+                
+
+                <img src="./images/img4-1200.jpg 1x, ./images/img4-1200@2x.jpg 2x" alt="">
+              </picture>
+
+
+            
               <h3 class="name">Михайло Єрмаков</h3>
               <p class="profession">UI Designer</p>
               <div class="social">
@@ -470,6 +631,8 @@
     </main>
     <footer>
       <div class="address-container container">
+        <div class="footer-content">
+          <div class="footer-box">
         <a class="logo-address" href="index.html"
           ><span class="web">Web</span><span class="studio-footer">Studio</span>
           </a>
@@ -493,6 +656,7 @@
             </li>
           </ul>
         </address>
+      </div>
         <div class="social-address">
           <h3 class="group-tittle">приєднуйтесь</h3>
           <ul class="groups">
@@ -522,6 +686,7 @@
             </li>
           </ul>
         </div>
+      </div>
         <p class="form-footer">
           Підпишіться на розсилку
         </p>
@@ -535,19 +700,21 @@
           placeholder="E-mail" 
           required>
           </div>
-          <button class="button-send" type="submit">
-            <a class="send" href="https://web.telegram.org/">
+          <div class="send-button"><button class="button-send" type="submit" formaction="https://web.telegram.org" >
+            <span class="send">
              Підписатися
              <svg class="icon-send" width="24" height="24">
               <use href="./images/icons.svg#icon-send"></use>
              </svg>
-            </a>
+            </span>
           </button>
+        </div>
 
         </div>
         
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

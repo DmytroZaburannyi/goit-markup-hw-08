@@ -1,13 +1,27 @@
+
 footer {
-    height: 252px;
     background: #2F303A;
     }
     
     .address-container {
     padding-top: 60px;
+        @media screen and (min-width:$tabl) {
+        padding-bottom: 60px;
+        }
+    
+        @media screen and (min-width:$desc) {
+        padding-bottom: 94px;
+        }
     }
-    
-    
+
+    address {
+        @media screen and (min-width:$tabl) {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+
     .address {
     font-style: normal;
     margin-top: 20px
@@ -17,17 +31,62 @@ footer {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.9;
-    /* identical to box height */
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
     letter-spacing: 0.03em;
     color: var(--bs-blue);
     text-decoration:none;
+    
+    @media screen and (min-width:$mob) and (max-width:$pre-desc) {
+        display: flex;
+        justify-content: center;
     }
+
+        @media screen and (min-width:$tabl) {
+            display: flex;
+            
+        }
+    
+        @media screen and (min-width:$desc) {
+        font-size: 26px;
+        line-height: 31px;
+        }
+    }
+    
+    .footer-content {
+        @media screen and (min-width:$tabl) and (max-width:$pre-desc) {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+    
     
     .address-map,
     .footer-mail {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width:$mob) and (max-width:$pre-desc) {
+        display: flex;
+        justify-content: center;
+    }
+
+    @media screen and (min-width:$tabl) {
+        
+    }
+
+    @media screen and (min-width:$desc) {
+        margin-bottom: 9px;
+    }
+    }
+
+    .footer-tell {
+        @media screen and (min-width:$mob) and (max-width:$pre-desc) {
+        
+        margin-bottom: 60px;
+        display: flex;
+        justify-content: center;
+        }
     }
     
     .studio-footer {
@@ -83,18 +142,25 @@ footer {
     }
     }
     
-   
+   .send-button {
+    @media screen and (min-width:$mob) and (max-width:$pre-desc) {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+   }
+   }
     
     
-    .check-email {
-        display: flex;
-        justify-content: flex-end;
+    .footer-wrapper {
+        @media screen and (min-width:$mob) and (max-width:$pre-desc) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+        }
     }
     
     .form-footer {
-    display: flex;
-    justify-content: space-around; 
-    margin: -82px 0px 20px 236px;   
+       
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -104,12 +170,37 @@ footer {
     text-transform: uppercase;
     
     color: #FFFFFF;
+
+    display: flex;
+    
+
+    @media screen and (min-width:$mob) and (max-width:$pre-desc) {
+    justify-content: center;
+    margin-bottom: 20px;
+
     }
+
+    @media screen and (min-width:$desc) {
+        justify-content: space-around; 
+        margin: -82px 0px 20px 236px;   
+
+    }
+    }
+    .check-email {
+         
+            @media screen and (min-width:$desc) {
+            display: flex;
+            justify-content: flex-end;
+            }
+        
+        
+    }
+
     
   
     
     .field-footer {
-        width: 358px;
+        width: 450px;
         height: 50px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -122,6 +213,75 @@ footer {
         &:focus {
             cursor: pointer;
     }
+    @media screen and (min-width:$desc) {
+        width: 358px;
+    }
+
     }
     
-    
+    .social-address {
+        color: #FFFFFF;
+        @media screen and (min-width:$desc) {
+            display: flex;
+            justify-content: center;
+            margin: -130px 0px 0px -372px;
+        }
+    }
+
+        .groups {
+        display: flex;
+        
+        @media screen and (min-width:$mob) {
+        justify-content: center;
+        margin-bottom: 60px;
+
+
+        }
+        
+        @media screen and (min-width:$desc) {
+        margin: 38px 0px 0px -120px;
+        }
+    }
+        
+        .group-tittle {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .footer-insta,
+        .footer-twit,
+        .footer-fac {
+        margin-right: 10px;
+        }
+
+        .icons{
+            fill: currentColor;
+         }
+         
+         
+         .link-svg__icons {
+             width: 44px;
+             height: 44px;
+             border-radius: 50%;
+             background: rgba(255, 255, 255, 0.1);
+             color: #FFFFFF;
+             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+             &:hover,
+               &:focus {
+                 background-color: #2196F3;
+                 color: #FFFFFF; 
+                 transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+                }
+                 }

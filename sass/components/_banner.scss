@@ -1,9 +1,19 @@
 .banner {
     display:flex;
-    height: 600px;
     top: 80px;
-    padding-bottom: 94px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width:$tabl) {
+        padding-bottom: 60px;
+        }
+    
+        @media screen and (min-width:$desc) {
+        padding-bottom: 94px;
+        }
     }
+
+
+    
     
     
     .banner__box {
@@ -15,30 +25,104 @@
     
     
     .banner-container {
-    max-width: 1600px;   
+    width:480px;   
     margin-left: auto; 
     margin-right: auto;
-    background:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url("../images/banner.jpg") no-repeat center/cover, #2F303A;
     padding: 200px 0;
+
+    background:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../images/Header-480.jpg") no-repeat center/cover, #2F303A;
+
+
+    
+
+    @media screen and (min-width:$tabl) {
+        width:768px;
+        }
+    
+        @media screen and (min-width:$desc) {
+            width:1200px;
+        }
+    
+
+    @media (min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi), 
+    (min-resolution: 2dppx) {
+        
+        background:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../images/Header-480@2x.jpg") no-repeat center/cover, #2F303A;
+
+    }
+
+
+
+    
+    @media screen and (min-width: $tabl) {
+    background:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../images/Header-768.jpg") no-repeat center/cover, #2F303A;
+
+    @media (min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi), 
+    (min-resolution: 2dppx) {
+        
+        background:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../images/Header-768@2x.jpg") no-repeat center/cover, #2F303A;
+
+    }
+}
+    
+
+
+    @media screen and (min-width: $desc) {
+        background:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../images/Header-1200.jpg") no-repeat center/cover, #2F303A;
+
+    @media (min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi), 
+    (min-resolution: 2dppx) {
+        
+        background:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../images/Header-1200@2x.jpg") no-repeat center/cover, #2F303A;
+
+    }
+    }
+
     }
     
     .hero {
-    width: 696px;
     margin-left: auto;
     margin-right: auto;
+    @media screen and (min-width:$tabl) {
+        width: 360px;
+        
+    }
+
+
+
+    @media screen and (min-width:$desc) {
+        width: 696px;
+        
+    }
     }
     
     .banner-title {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
+    font-size: 26px;
+    line-height: 42px;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--bs-white);
     margin-bottom: 30px;
+
+    @media screen and (min-width:$desc) {
+        font-size: 44px;
+        line-height: 60px;
+        
+    }
+
     }
     
     .banner-btn {

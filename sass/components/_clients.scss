@@ -1,6 +1,17 @@
-.clients{
-    padding-bottom: 93px;
+.clients {
+    padding-bottom: 60px;
+
+    @media screen and (min-width:$tabl) {
+        padding-bottom: 60px;
+        }
+    
+        @media screen and (min-width:$desc) {
+        padding-bottom: 94px;
+        }
+
+
     }
+
     
     
     .clients-title {
@@ -11,9 +22,25 @@
     }
     
     .clients-item {
+    
+
     display: flex;
     justify-content: space-evenly;
     color: #afb1b8;
+    flex-wrap: wrap;
+
+    @media screen and (min-width:$tabl) {
+        display: flex;
+        color: #afb1b8;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+    
+        @media screen and (min-width:$desc) {
+            display: flex;
+            justify-content: space-evenly;
+            color: #afb1b8;
+        }
     }
     
     .client-icon {
@@ -31,6 +58,7 @@
     box-sizing: border-box;
     display: flex;
     transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 30px;
     &:hover,
     &:focus {
         background-color: #FFFFFF;
@@ -38,6 +66,10 @@
         cursor: pointer;
         border-color: #2196F3;
     }
+
+    @media screen and (min-width:$tabl) and (max-width:$pre-desc) {
+        margin-right: 30px;
+        }
     }
     
    

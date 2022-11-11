@@ -1,47 +1,49 @@
+
 .peculiarities-title {
     display: none;
     }
     
     .feature__list {
-    display:flex;
+   
     margin-bottom: 118px;
     margin-top: 94px;
+
+    @media screen and (min-width:$tabl) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        }
+    
+        @media screen and (min-width:$desc) {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+
+
+
+    }
     }
     
-    .icon-antenna {
+    
+    
+    .item-icon {
+    width: 450px;
+    margin-bottom: 30px;
+    
+    @media screen and (min-width:$tabl) {
+    width: 354px;
+    
+    }
+
+    @media screen and (min-width:$desc) {
     width: 270px;
-    height: 98px;
-    left: 215px;
-    top: 774px;
     margin-right: 30px;
-    
+    }
     }
     
-    .item-clock {
-    width: 270px;
-    height: 74px;
-    left: 515px;
-    top: 774px;
-    margin-right: 30px;
     
-    }
-    
-    .item-diagram {
-    width: 270px;
-    height: 74px;
-    left: 815px;
-    top: 774px;
-    margin-right: 30px;
-    
-    }
-    
-    .item-astronaut {
-    width: 270px;
-    height: 98px;
-    left: 1115px;
-    top: 774px;
-    
-    }
+
     
     .feature-title {
     font-family: 'Roboto', sans-serif;
@@ -53,6 +55,20 @@
     text-transform: uppercase;
     color: var(--bs-dark);
     margin-bottom: 10px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width:$tabl) {
+        width: 354px;
+        
+        }
+    
+        @media screen and (min-width:$desc) {
+        width: 270px;
+        margin-right: 30px;
+        }
+    
     }
     
     .description-title {
@@ -61,12 +77,30 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--bs-approx-grey);
+    width: 450px;
+    
+    @media screen and (min-width:$tabl) {
+        width: 354px;
+        
+        }
+    
+        @media screen and (min-width:$desc) {
+        width: 270px;
+        margin-right: 30px;
+        }
+
+    
     
     }
     
     .row-img {
     display: flex;
     justify-content: center;
+
+    @media screen and (min-width:$desc) {
+        justify-content: flex-start;
+        }
+    
     }
     
     .peculiarities__icon {
@@ -76,8 +110,18 @@
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
-    width: 270px;
+    width: 450px;
     height: 120px;
+
+    @media screen and (min-width:$tabl) {
+        width: 354px;
+        
+        }
+    
+        @media screen and (min-width:$desc) {
+        width: 270px;
+        margin-right: 30px;
+        }
     }
     
     
@@ -88,5 +132,17 @@
     }
     
     .peculiarities {
-    padding-bottom: 86px;
+    padding-bottom: 60px;
+
+
+    @media screen and (min-width:$tabl) {
+    padding-bottom: 60px;
     }
+
+    @media screen and (min-width:$desc) {
+    padding-bottom: 94px;
+    }
+
+    }
+
+

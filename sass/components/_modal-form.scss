@@ -31,6 +31,11 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+
+    @media screen and (min-width:$mob) and (max-width:$pre-desc) {
+        width: 450px;
+    
+    }
     }
     
     .close {
@@ -173,8 +178,19 @@
     position: relative;
     display: flex;
     align-items: center;
+    
     margin-bottom: 40px;
     color: #757575;
+
+    @media screen and (min-width:$mob) and (max-width:$pre-desc) {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    }
+    @media screen and (min-width:$desc) {
+        justify-content: center;
+    }
+
     }
     
     .check-wrapp {
