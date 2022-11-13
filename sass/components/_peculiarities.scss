@@ -4,9 +4,6 @@
     }
     
     .feature__list {
-   
-    margin-bottom: 118px;
-    margin-top: 94px;
 
     @media screen and (min-width:$tabl) {
         display: flex;
@@ -30,6 +27,11 @@
     .item-icon {
     width: 450px;
     margin-bottom: 30px;
+
+    @media screen and (min-width:$minmob) {
+        width: 290px;
+        
+        }
     
     @media screen and (min-width:$tabl) {
     width: 354px;
@@ -59,6 +61,11 @@
     display: flex;
     justify-content: center;
 
+    @media screen and (min-width:$minmob) {
+        width: 290px;
+        
+        }
+
     @media screen and (min-width:$tabl) {
         width: 354px;
         
@@ -78,6 +85,12 @@
     letter-spacing: 0.03em;
     color: var(--bs-approx-grey);
     width: 450px;
+
+
+    @media screen and (min-width:$minmob) {
+        width: 290px;
+        
+        }
     
     @media screen and (min-width:$tabl) {
         width: 354px;
@@ -112,6 +125,11 @@
     justify-content: center;
     width: 450px;
     height: 120px;
+
+    @media screen and (min-width:$minmob) {
+        width: 290px;
+        
+        }
 
     @media screen and (min-width:$tabl) {
         width: 354px;

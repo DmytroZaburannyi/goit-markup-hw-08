@@ -292,6 +292,13 @@ header {
         display: flex;
         margin-bottom: 32px;
         margin-left: 40px;
+
+        @media screen and (min-width:$minmob) {
+            margin-left: 0;
+        justify-content: center;}
+
+
+       
     }
 
     .contacts-mail {
@@ -351,6 +358,14 @@ header {
     display: flex;
     gap: 10px;
     margin-left: 40px;
+
+
+    @media screen and (min-width:$minmob) {
+        margin-left: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
 }
 
     

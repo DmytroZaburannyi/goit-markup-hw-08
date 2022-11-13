@@ -21,6 +21,12 @@
     margin-right: auto;
     padding: 0 15px;
     width: 100%;
+
+    @media screen and (min-width:$desc) {
+        padding: 0;
+    }
+
+
     }
     
     
@@ -29,9 +35,11 @@
     margin-left: auto; 
     margin-right: auto;
     padding: 200px 0;
+    display: block;
+    max-width: 100%;
 
     background:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url("../images/Header-480.jpg") no-repeat center/cover, #2F303A;
+    url("../images/banner.jpg") no-repeat center/cover, #2F303A;
 
 
     
@@ -40,9 +48,17 @@
         width:768px;
         }
     
-        @media screen and (min-width:$desc) {
-            width:1200px;
+        @media screen and (min-width:$desc)  {
+            width:1600px;
         }
+
+        
+
+
+
+        
+
+
     
 
     @media (min-device-pixel-ratio: 2), 

@@ -37,6 +37,11 @@ footer {
     letter-spacing: 0.03em;
     color: var(--bs-blue);
     text-decoration:none;
+
+    @media screen and (min-width:$minmob)  {
+        display: flex;
+        justify-content: center;
+    }
     
     @media screen and (min-width:$mob) and (max-width:$pre-desc) {
         display: flex;
@@ -66,6 +71,11 @@ footer {
     .footer-mail {
     margin-bottom: 8px;
 
+    @media screen and (min-width:$minmob)  {
+        display: flex;
+        justify-content: center;
+    }
+
     @media screen and (min-width:$mob) and (max-width:$pre-desc) {
         display: flex;
         justify-content: center;
@@ -81,6 +91,13 @@ footer {
     }
 
     .footer-tell {
+
+        @media screen and (min-width:$minmob)  {
+            margin-bottom: 60px;
+        display: flex;
+        justify-content: center;
+        } 
+
         @media screen and (min-width:$mob) and (max-width:$pre-desc) {
         
         margin-bottom: 60px;
@@ -143,6 +160,13 @@ footer {
     }
     
    .send-button {
+    @media screen and (min-width:$minmob) {
+        display: flex;
+    justify-content: center;
+    padding-bottom: 60px; 
+    }
+
+
     @media screen and (min-width:$mob) and (max-width:$pre-desc) {
     display: flex;
     justify-content: center;
@@ -152,6 +176,13 @@ footer {
     
     
     .footer-wrapper {
+
+        @media screen and (min-width:$minmob) {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;  
+        }
+
         @media screen and (min-width:$mob) and (max-width:$pre-desc) {
     display: flex;
     justify-content: center;
@@ -172,7 +203,11 @@ footer {
     color: #FFFFFF;
 
     display: flex;
+
     
+    @media screen and (min-width:$minmob) {
+        justify-content: center;
+        margin-bottom: 20px;
 
     @media screen and (min-width:$mob) and (max-width:$pre-desc) {
     justify-content: center;
@@ -186,6 +221,7 @@ footer {
 
     }
     }
+}
     .check-email {
          
             @media screen and (min-width:$desc) {
@@ -213,6 +249,12 @@ footer {
         &:focus {
             cursor: pointer;
     }
+
+    @media screen and (min-width:$minmob) {
+        width: 290px;
+        
+        }
+
     @media screen and (min-width:$desc) {
         width: 358px;
     }
@@ -230,6 +272,13 @@ footer {
 
         .groups {
         display: flex;
+
+        @media screen and (min-width:$minmob) {
+            justify-content: center;
+            margin-bottom: 60px;
+
+            
+            }
         
         @media screen and (min-width:$mob) {
         justify-content: center;

@@ -1,6 +1,10 @@
 .doing{
     padding-bottom: 94px;
 
+    @media screen and (min-width:$minmob) and (max-width:$pre-desc) {
+        display: none;
+    }
+
     @media screen and (min-width:$mob) and (max-width:$pre-desc) {
     display: none;
     }
@@ -8,6 +12,8 @@
     @media screen and (min-width:$tabl) and (max-width:$pre-desc) {
         display: none;
     }
+
+
     }
     
     .overlay-text {
