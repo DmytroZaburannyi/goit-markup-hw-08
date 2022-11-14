@@ -89,6 +89,14 @@
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+
+    @media screen and (min-width:$mob) and (max-width:$pre-tabl) {
+        flex-wrap: wrap;
+        margin-left: 8px;
+        justify-content: flex-start;
+        
+        }
+    
     }
     
     
@@ -117,5 +125,7 @@
     
     .btn-active {
     margin-right: 8px;
-    
+    @media screen and (min-width:$mob) and (max-width:$pre-tabl) {
+    margin-bottom: 15px;
+}
     }

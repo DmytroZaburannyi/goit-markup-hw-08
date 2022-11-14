@@ -5,17 +5,11 @@ footer {
     
     .address-container {
     padding-top: 60px;
-        @media screen and (min-width:$tabl) {
-        padding-bottom: 60px;
-        }
-    
-        @media screen and (min-width:$desc) {
-        padding-bottom: 94px;
-        }
+        
     }
 
     address {
-        @media screen and (min-width:$tabl) {
+        @media screen and (min-width:$tabl) and (max-width:$pre-desc) {
         display: flex;
         justify-content: flex-start;
     }
@@ -56,6 +50,8 @@ footer {
         @media screen and (min-width:$desc) {
         font-size: 26px;
         line-height: 31px;
+        display: flex;
+        justify-content: flex-start;
         }
     }
     
@@ -87,13 +83,15 @@ footer {
 
     @media screen and (min-width:$desc) {
         margin-bottom: 9px;
+        display: flex;
+        justify-content: flex-start;
     }
     }
 
     .footer-tell {
 
         @media screen and (min-width:$minmob)  {
-            margin-bottom: 60px;
+        margin-bottom: 60px;
         display: flex;
         justify-content: center;
         } 
@@ -103,6 +101,12 @@ footer {
         margin-bottom: 60px;
         display: flex;
         justify-content: center;
+        }
+
+        @media screen and (min-width:$desc) {
+            
+            display: flex;
+            justify-content: flex-start;
         }
     }
     

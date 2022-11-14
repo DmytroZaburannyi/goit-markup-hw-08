@@ -1081,18 +1081,8 @@ footer {
 .address-container {
   padding-top: 60px;
 }
-@media screen and (min-width: 768px) {
-  .address-container {
-    padding-bottom: 60px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .address-container {
-    padding-bottom: 94px;
-  }
-}
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   address {
     display: flex;
     justify-content: flex-start;
@@ -1136,6 +1126,8 @@ footer {
   .logo-address {
     font-size: 26px;
     line-height: 31px;
+    display: flex;
+    justify-content: flex-start;
   }
 }
 
@@ -1168,6 +1160,8 @@ footer {
   .address-map,
 .footer-mail {
     margin-bottom: 9px;
+    display: flex;
+    justify-content: flex-start;
   }
 }
 
@@ -1183,6 +1177,12 @@ footer {
     margin-bottom: 60px;
     display: flex;
     justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-tell {
+    display: flex;
+    justify-content: flex-start;
   }
 }
 
@@ -1689,6 +1689,13 @@ input::placeholder {
   justify-content: center;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .btn-list {
+    flex-wrap: wrap;
+    margin-left: 8px;
+    justify-content: flex-start;
+  }
+}
 
 .btn__row {
   border: var(--bs-ghost-white);
@@ -1713,6 +1720,11 @@ input::placeholder {
 
 .btn-active {
   margin-right: 8px;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .btn-active {
+    margin-bottom: 15px;
+  }
 }
 
 .project-row {
