@@ -268,6 +268,15 @@ header {
     }
     }
 
+    .burger-logo {
+        @media screen and (min-width:$tabl)  {
+            display:none; 
+    
+        }
+
+
+    }
+
     .mob-menu {
         position: fixed;
         right: 0;

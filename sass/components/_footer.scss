@@ -256,7 +256,7 @@ footer {
             cursor: pointer;
     }
 
-    @media screen and (min-width:$minmob) {
+    @media screen and (min-width:$minmob) and (max-width:$pre-tabl) {
         width: 290px;
         
         }

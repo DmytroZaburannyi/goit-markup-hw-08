@@ -67,6 +67,10 @@
         border-color: #2196F3;
     }
 
+    @media screen and (min-width:$minmob) and (max-width:$pre-mob) {
+        width: 130px;
+        }
+
     @media screen and (min-width:$tabl) and (max-width:$pre-desc) {
         margin-right: 30px;
         }

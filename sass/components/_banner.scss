@@ -22,6 +22,10 @@
     padding: 0 15px;
     width: 100%;
 
+    @media screen and (min-width:$minmob) and (max-width:$pre-mob) {
+        padding: 0;
+    }
+
     @media screen and (min-width:$desc) {
         padding: 0;
     }
