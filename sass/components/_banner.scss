@@ -34,7 +34,7 @@
     width:480px;   
     margin-left: auto; 
     margin-right: auto;
-    padding: 200px 0;
+    padding: 100px 0;
     display: block;
     max-width: 100%;
 
@@ -43,6 +43,7 @@
 
 
     
+    
 
     @media screen and (min-width:$tabl) {
         width:768px;
@@ -50,6 +51,7 @@
     
         @media screen and (min-width:$desc)  {
             width:1600px;
+            padding: 200px 0;
         }
 
         

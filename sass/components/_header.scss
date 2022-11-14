@@ -2,6 +2,12 @@ header {
     height: 80px;
     background: #FFFFFF;
     display: flex;
+
+    @media screen and (min-width:$minmob) and (max-width:$pre-tabl) { 
+
+       display: flex;
+        flex-direction: row-reverse;
+        }
     }
     
     .inner {
@@ -26,7 +32,19 @@ header {
     padding-top: 25px;
     padding-bottom: 24px;
     margin-right: 93px;
+
+    @media screen and (min-width:$minmob) and (max-width:$pre-tabl) { 
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    padding: 16px 0 16px 15px;
+    margin-right: 0;
+
+
     }
+    }
+
+
     
     .web {
     color: var(--bs-blue);
@@ -127,15 +145,19 @@ header {
     }
 
     @media screen and (min-width:$tabl) and (max-width:$pre-desc) {
-
-        padding-top: 21px;
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       padding-top: 21px;
     }
 
     } 
     
     
     .contact-link {
-    margin-right: 30px;
+
+        
+    
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -149,6 +171,9 @@ header {
     display: flex;
     flex-direction: row-reverse;
     transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+
+    
+
     &:hover,
     &:focus {
         color: var(--bs-blue);
@@ -168,6 +193,14 @@ header {
     
     .contacts__item {
     color: var(--bs-approx-grey);
+
+    @media screen and (min-width:$desc) {
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+    }
+
+    
     }
     
     .contacts__icon {
@@ -187,9 +220,9 @@ header {
     }
 
     .burger {
-        width: 40px;
-        height: 40px;
-        padding: 0;
+        width: 24px;
+        height: 24px;
+        padding: 26px 0;
         margin-left: auto;
         display: flex;
         align-items: center;
@@ -210,25 +243,25 @@ header {
             display: block;
             width: 100%;
             height: 3px;
-            background-color: var(--bs-blue);
+            background-color: var(--bs-dark);
             
             &::after,
             &::before {
             position: absolute;
             content: '';
-            background-color: var(--bs-blue);
+            background-color: var(--bs-dark);
             width: 100%;
             height: 3px;
             left: 0;
         }
 
         &::after {
-            top: -15px;
+            top: -10px;
             
         }
 
         &::before {
-            bottom: -15px;
+            bottom: -10px;
             
         }
 
@@ -262,11 +295,15 @@ header {
 
     .mob-menu__close {
         position: absolute;
-        right: 0;
-        top: 0;
+        right: 10px;
+        top: 10px;
+        background: transparent;
+        align-content: center;
+        border: #fff;
         &:hover,
         &:focus {
         color: var(--bs-blue);
+
     }
 
     }
@@ -330,7 +367,9 @@ header {
 
     .mob-menu__list {
         margin-top: 48px;
-        margin-bottom: 306px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .link-mob {

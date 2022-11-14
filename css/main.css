@@ -182,6 +182,12 @@ header {
   background: #FFFFFF;
   display: flex;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  header {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
 
 .inner {
   border: 1px solid #ECECEC;
@@ -205,6 +211,15 @@ a {
   padding-top: 25px;
   padding-bottom: 24px;
   margin-right: 93px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .logo {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    padding: 16px 0 16px 15px;
+    margin-right: 0;
+  }
 }
 
 .web {
@@ -294,12 +309,14 @@ a {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding-top: 21px;
   }
 }
 
 .contact-link {
-  margin-right: 30px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -329,6 +346,11 @@ a {
 .contacts__item {
   color: var(--bs-approx-grey);
 }
+@media screen and (min-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
 
 .contacts__icon {
   margin-right: 10px;
@@ -345,9 +367,9 @@ a {
 }
 
 .burger {
-  width: 40px;
-  height: 40px;
-  padding: 0;
+  width: 24px;
+  height: 24px;
+  padding: 26px 0;
   margin-left: auto;
   display: flex;
   align-items: center;
@@ -367,21 +389,21 @@ a {
   display: block;
   width: 100%;
   height: 3px;
-  background-color: var(--bs-blue);
+  background-color: var(--bs-dark);
 }
 .burger__line::after, .burger__line::before {
   position: absolute;
   content: "";
-  background-color: var(--bs-blue);
+  background-color: var(--bs-dark);
   width: 100%;
   height: 3px;
   left: 0;
 }
 .burger__line::after {
-  top: -15px;
+  top: -10px;
 }
 .burger__line::before {
-  bottom: -15px;
+  bottom: -10px;
 }
 
 .mob-menu {
@@ -409,8 +431,11 @@ a {
 
 .mob-menu__close {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 10px;
+  top: 10px;
+  background: transparent;
+  align-content: center;
+  border: #fff;
 }
 .mob-menu__close:hover, .mob-menu__close:focus {
   color: var(--bs-blue);
@@ -470,7 +495,9 @@ a {
 
 .mob-menu__list {
   margin-top: 48px;
-  margin-bottom: 306px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .link-mob {
@@ -534,7 +561,7 @@ a {
   width: 480px;
   margin-left: auto;
   margin-right: auto;
-  padding: 200px 0;
+  padding: 100px 0;
   display: block;
   max-width: 100%;
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/banner.jpg") no-repeat center/cover, #2F303A;
@@ -547,6 +574,7 @@ a {
 @media screen and (min-width: 1200px) {
   .banner-container {
     width: 1600px;
+    padding: 200px 0;
   }
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -1428,6 +1456,11 @@ footer {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .modal {
+    width: 290px;
+  }
+}
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal {
     width: 450px;
@@ -1471,6 +1504,12 @@ footer {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .form-title {
+    font-size: 15px;
+    line-height: 15px;
+  }
 }
 
 .label {
@@ -1556,6 +1595,11 @@ input::placeholder {
   resize: none;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .textarea {
+    height: 40px;
+  }
+}
 
 .check-label {
   position: relative;
@@ -1563,6 +1607,14 @@ input::placeholder {
   align-items: center;
   margin-bottom: 40px;
   color: #757575;
+}
+@media screen and (min-width: 320px) {
+  .check-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 20px;
+  }
 }
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .check-label {
