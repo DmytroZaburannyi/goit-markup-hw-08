@@ -107,6 +107,7 @@ footer {
             
             display: flex;
             justify-content: flex-start;
+            margin-bottom: 0;
         }
     }
     
@@ -231,6 +232,7 @@ footer {
             @media screen and (min-width:$desc) {
             display: flex;
             justify-content: flex-end;
+            padding-bottom: 60px;
             }
         
         

@@ -1183,6 +1183,7 @@ footer {
   .footer-tell {
     display: flex;
     justify-content: flex-start;
+    margin-bottom: 0;
   }
 }
 
@@ -1293,6 +1294,7 @@ footer {
   .check-email {
     display: flex;
     justify-content: flex-end;
+    padding-bottom: 60px;
   }
 }
 
