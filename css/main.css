@@ -1806,4 +1806,10 @@ input::placeholder {
   /* or 156% */
   letter-spacing: 0.03em;
   color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+  .list {
+    width: 354px;
+  }
 }/*# sourceMappingURL=main.css.map */

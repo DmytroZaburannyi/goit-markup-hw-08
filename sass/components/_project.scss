@@ -86,6 +86,14 @@
         
         color: #FFFFFF;
     }
+
+
+    .list {
+        @media screen and (min-width:$tabl) {
+            width: 354px;
+    
+        }
+    }
     
     
     
