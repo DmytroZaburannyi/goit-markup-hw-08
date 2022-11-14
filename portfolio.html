@@ -13,11 +13,12 @@
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
-    <header class="inner">
-      <div class="header-inner container">
+    <header>
+      <div class="header-inner container ">
         <nav class="header-nav">
           <a class="logo" href="index.html"
             ><span class="web">Web</span><span class="studio">Studio</span></a>
+           
 
           <ul class="header-nav__list">
             <li class="header-nav__link">
@@ -49,7 +50,80 @@
             </a>
           </li>
         </ul>
+
+        <button class="burger js-open-menu">
+          <span class="burger__line"></span>
+        </button>
       </div>
+
+      <div class="mob-menu js-menu-container">
+        <button class="mob-menu__close js-close-menu">
+          <svg
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+
+        <div class="mob-menu__body">
+          <ul class="mob-menu__list">
+            <li class="mob-menu__link">
+              <a href="index.html" class="mob-link">Студія</a>
+            </li>
+            <li class="mob-menu__link">
+              <a href="portfolio.html" class="mob-link active">Портфоліо</a>
+            </li>
+            <li class="mob-menu__link">
+              <a href=".html" class="mob-link">Контакти</a>
+            </li>
+          </ul>
+        
+
+          <ul class="mob-contacts">
+          <li class="mob-contacts__item">
+            <a href="tell:+380961111111" class="contacts-link">
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li class="mob-contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts-mail">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+
+          <ul class="social-mob">
+            <li class="social-mob__link">
+              <a class="link-mob" href="https://www.instagram.com">
+                Instagram
+              </a>
+            </li>
+            <li class="social-mob__link">
+              <a class="link-mob" href="https://twitter.com">
+                Twitter
+              </a>
+            </li>
+            <li class="social-mob__link">
+              <a class="link-mob" href="https://facebook.com">
+                Facebook
+              </a>
+            </li>
+            <li class="social-mob__link">
+              <a class="link-mob" href="https://www.linkedin.com">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+         </div>
+        </div>
     </header>
 
     <main class="portfolio">
